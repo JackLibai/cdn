@@ -1,19 +1,19 @@
 @echo off
 
-:: è·å–å½“å‰è„šæœ¬çš„è·¯å¾„
+:: »ñÈ¡µ±Ç°½Å±¾µÄÂ·¾¶
 cd /d %~dp0
-:: è‡ªåŠ¨æäº¤
+:: ×Ô¶¯Ìá½»
 git init 
 git add . 
- git commit -m "batæ‰¹å¤„ç†è‡ªåŠ¨æ¨é€:%date:~0,10%,%time:~0,8%" 
+ git commit -m "batÅú´¦Àí×Ô¶¯ÍÆËÍ:%date:~0,10%,%time:~0,8%" 
 ::  git commit -m "%commitMessage%" 
 git push origin master
-@echo å·²ç»å®Œæˆ,
+@echo ÒÑ¾­Íê³É,
 
 SET daoTime=60
 :dao
 set /a daoTime=daoTime-1
 ping -n 2 -w 500 127.1>nul
 cls
-echo ä¸Šä¼ Gitå®Œæˆ ,å€’è®¡æ—¶é€€å‡º: %daoTime%ç§’
+echo ÉÏ´«GitÍê³É ,µ¹¼ÆÊ±ÍË³ö: %daoTime%Ãë
 if %daoTime%==0 (exit) else (goto dao)
