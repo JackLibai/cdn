@@ -1,5 +1,7 @@
 @echo off
 
+:: https://blog.csdn.net/ouyang_peng/article/details/84587186
+
 :: 获取当前脚本的路径
 cd /d %~dp0
 :: 自动提交
