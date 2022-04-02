@@ -9,7 +9,7 @@ git add --all
 git push -u cdn main
 @echo 已经完成,
 
-SET daoTime=60
+SET daoTime=3
 :dao
 set /a daoTime=daoTime-1
 ping -n 2 -w 500 127.1>nul
