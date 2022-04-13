@@ -1,5 +1,6 @@
 @echo off
 
+:: https://blog.csdn.net/qq_41866776/article/details/103508581
 :: https://blog.csdn.net/ouyang_peng/article/details/84587186
 
 :: 获取当前脚本的路径
